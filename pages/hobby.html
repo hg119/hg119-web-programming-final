@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hobby | 이한결</title>
+  <style>
+    body{margin:0;font-family:system-ui, -apple-system, Segoe UI, Roboto, sans-serif;background:#f5f7fb;color:#111;}
+    header{background:#fff;border-bottom:1px solid #eaeaea;padding:18px 16px;text-align:center;}
+    header h1{margin:0;font-size:22px;}
+    header p{margin:6px 0 0;color:#555;font-size:13px;}
+    nav{background:#fff;border-bottom:1px solid #eaeaea;}
+    nav ul{margin:0;padding:0;list-style:none;display:flex;justify-content:center;gap:16px;}
+    nav a{display:block;padding:12px 10px;color:#111;text-decoration:none;font-weight:600;}
+    nav a:hover{text-decoration:underline;}
+    .wrap{max-width:900px;margin:20px auto;padding:0 14px;}
+    .card{background:#fff;border:1px solid #eaeaea;border-radius:14px;padding:16px;box-shadow:0 6px 20px rgba(0,0,0,.04);margin-bottom:16px;}
+    .h-title{margin:0 0 10px;}
+    .desc{margin:10px 0 0;line-height:1.6;color:#333;}
+    .img{width:100%;max-height:360px;object-fit:cover;border-radius:14px;border:1px solid #eee;background:#fafafa;}
+    audio{width:100%;margin-top:12px;}
+    footer{text-align:center;color:#777;font-size:12px;padding:18px 0;margin-top:20px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>웹프로그래밍 기말 프로젝트</h1>
+    <p>Hobby 페이지</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./profile.html">Profile</a></li>
+      <li><a href="./hobby.html">Hobby</a></li>
+      <li><a href="./works.html">Works</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="wrap">
+    <section class="card">
+      <h2 class="h-title">1) 음악 듣기</h2>
+      <p class="desc">음악은 진짜 잘 때 빼고 항상 듣는다. 기분 전환이 필요할 때도 음악이 제일 도움이 된다.</p>
+    </section>
+
+    <section class="card">
+      <h2 class="h-title">2) 자전거 타기</h2>
+      <img class="img" src="../assets/img/hobby.jpg" alt="자전거 타며 찍은 사진">
+      <p class="desc">자전거 타고 집 주변 호수공원에 갔을 때 찍은 사진이다. 요즘은 날씨가 추워져서 못 타러 가지만 최근까지도 주 1~2번씩은 타러 갔고, 한 번 타면 20~30km씩 탈 정도로 자전거 타기를 좋아했다.</p>
+    </section>
+
+    <section class="card">
+      <h2 class="h-title">3) 백준 문제 풀이를 블로그에 정리하기</h2>
+      <p class="desc">
+        1학기 때 다른 수업을 들으면서, 한 교수님이 어떤 졸업생분이 대학 다니면서 블로그를 꾸준히 쓴 게 취업에 도움이 되었다고 말씀하셨다.
+        그래서 나도 백준 문제를 꾸준히 풀고 블로그에 써보려고 노력하고 있다. 가끔 까먹기도 하지만, 꾸준히 하려고 한다.
+      </p>
+
+      <audio controls>
+        <source src="../assets/audio/hobby.mp3" type="audio/mpeg">
+        브라우저가 오디오를 지원하지 않습니다.
+      </audio>
+    </section>
+  </main>
+
+  <footer>© 2025 Web Programming Final Project</footer>
+</body>
+</html>

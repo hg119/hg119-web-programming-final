@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works | 이한결</title>
+  <style>
+    body{margin:0;font-family:system-ui, -apple-system, Segoe UI, Roboto, sans-serif;background:#f5f7fb;color:#111;}
+    header{background:#fff;border-bottom:1px solid #eaeaea;padding:18px 16px;text-align:center;}
+    header h1{margin:0;font-size:22px;}
+    header p{margin:6px 0 0;color:#555;font-size:13px;}
+    nav{background:#fff;border-bottom:1px solid #eaeaea;}
+    nav ul{margin:0;padding:0;list-style:none;display:flex;justify-content:center;gap:16px;}
+    nav a{display:block;padding:12px 10px;color:#111;text-decoration:none;font-weight:600;}
+    nav a:hover{text-decoration:underline;}
+    .wrap{max-width:900px;margin:20px auto;padding:0 14px;}
+    .card{background:#fff;border:1px solid #eaeaea;border-radius:14px;padding:16px;box-shadow:0 6px 20px rgba(0,0,0,.04);margin-bottom:16px;}
+    .desc{margin:10px 0 0;line-height:1.6;color:#333;}
+    .tag{display:inline-block;background:#eafff0;border:1px solid #c9f2d6;color:#0b7a2a;border-radius:999px;padding:4px 10px;font-size:12px;margin-right:6px;}
+    video{width:100%;margin-top:12px;border-radius:14px;border:1px solid #eee;background:#000;}
+    audio{width:100%;margin-top:12px;}
+    footer{text-align:center;color:#777;font-size:12px;padding:18px 0;margin-top:20px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>웹프로그래밍 기말 프로젝트</h1>
+    <p>Works 페이지</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./profile.html">Profile</a></li>
+      <li><a href="./hobby.html">Hobby</a></li>
+      <li><a href="./works.html">Works</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="wrap">
+    <section class="card">
+      <h3>1. 백준 문제 풀이</h3>
+      <span class="tag">C언어</span>
+      <span class="tag">문제 풀이</span>
+      <p class="desc">C언어 문제를 풀면서 기본기를 다지고 있다. 꾸준히 하려고 노력 중이다.</p>
+    </section>
+
+    <section class="card">
+      <h3>2. 웹프로그래밍 기말 프로젝트</h3>
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+      <p class="desc">자기소개 웹페이지 만들기 프로젝트이다. 처음엔 어려웠는데 점점 익숙해지고 있다.</p>
+    </section>
+
+    <section class="card">
+      <h3>3. Essential English 조별 과제</h3>
+      <span class="tag">팀 프로젝트</span>
+      <span class="tag">챌린지</span>
+      <p class="desc">조원들과 만나서 2주 동안 챌린지를 촬영했다. 내가 한 챌린지는 러닝하기이다.</p>
+
+      <video controls>
+        <source src="../assets/video/running.mp4" type="video/mp4">
+        브라우저가 영상을 지원하지 않습니다.
+      </video>
+
+      <p class="desc">Essential English 수업의 조별 과제로 진행한 러닝 챌린지 영상이다. 2주 동안 꾸준히 실천하며 기록하였다.</p>
+
+      <audio controls>
+        <source src="../assets/audio/works.mp3" type="audio/mpeg">
+        브라우저가 오디오를 지원하지 않습니다.
+      </audio>
+    </section>
+  </main>
+
+  <footer>© 2025 Web Programming Final Project</footer>
+</body>
+</html>

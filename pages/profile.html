@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile | 이한결</title>
+  <style>
+    body{margin:0;font-family:system-ui, -apple-system, Segoe UI, Roboto, sans-serif;background:#f5f7fb;color:#111;}
+    header{background:#fff;border-bottom:1px solid #eaeaea;padding:18px 16px;text-align:center;}
+    header h1{margin:0;font-size:22px;}
+    header p{margin:6px 0 0;color:#555;font-size:13px;}
+    nav{background:#fff;border-bottom:1px solid #eaeaea;}
+    nav ul{margin:0;padding:0;list-style:none;display:flex;justify-content:center;gap:16px;}
+    nav a{display:block;padding:12px 10px;color:#111;text-decoration:none;font-weight:600;}
+    nav a:hover{text-decoration:underline;}
+    .wrap{max-width:900px;margin:20px auto;padding:0 14px;}
+    .card{background:#fff;border:1px solid #eaeaea;border-radius:14px;padding:16px;box-shadow:0 6px 20px rgba(0,0,0,.04);margin-bottom:16px;}
+    .profile-top{display:flex;gap:14px;align-items:center;}
+    .avatar{width:110px;height:110px;border-radius:14px;object-fit:cover;border:1px solid #eee;background:#fafafa;}
+    .namebox h2{margin:0 0 8px;font-size:20px;}
+    .badge{display:inline-block;background:#eef2ff;color:#2a3cff;border:1px solid #dfe6ff;padding:4px 10px;border-radius:999px;font-size:12px;margin-right:6px;}
+    .grid{margin-top:14px;display:grid;gap:10px;}
+    .info-row{display:grid;grid-template-columns:110px 1fr;gap:10px;padding:10px;border:1px solid #f0f0f0;border-radius:12px;background:#fbfbfb;}
+    .quote{margin-top:10px;padding:14px;border-left:4px solid #2a3cff;background:#f1f5ff;border-radius:12px;line-height:1.6;}
+    audio{width:100%;margin-top:12px;}
+    footer{text-align:center;color:#777;font-size:12px;padding:18px 0;margin-top:20px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>웹프로그래밍 기말 프로젝트</h1>
+    <p>Profile 페이지</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./profile.html">Profile</a></li>
+      <li><a href="./hobby.html">Hobby</a></li>
+      <li><a href="./works.html">Works</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="profile-top">
+        <img class="avatar" src="../assets/img/profile.jpg" alt="이한결 프로필 이미지">
+        <div class="namebox">
+          <h2>이한결</h2>
+          <span class="badge">20살</span>
+          <span class="badge">AI·SW 계열</span>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="info-row">
+          <strong>관심 분야</strong>
+          <span>아직은 다양한 분야를 탐색 중이며, 웹프로그래밍 기반 프로젝트를 하면서 방향을 찾아가는 중이다.</span>
+        </div>
+        <div class="info-row">
+          <strong>성격/특징</strong>
+          <span>처음엔 조금 소심하고 낯을 가리지만, 친해지면 훨씬 활발해지고 편하게 소통하는 편이다.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3 style="margin:0 0 10px;">하고 싶은 말</h3>
+      <div class="quote">
+        처음 과제를 접했을 때는 막막했지만, 교수님이 만들어주신 기본 틀을 바탕으로 AI의 도움을 조금씩 받으면서 진행하니 생각보다 할 만했고 하다 보니 은근 재미도 느꼈다.
+        이번 과제를 계기로 더 꾸준히 연습해서 완성도 높은 결과물을 만들 수 있도록 노력하겠다.
+      </div>
+
+      <audio controls>
+        <source src="../assets/audio/profile.mp3" type="audio/mpeg">
+        브라우저가 오디오를 지원하지 않습니다.
+      </audio>
+    </section>
+  </main>
+
+  <footer>© 2025 Web Programming Final Project</footer>
+</body>
+</html>

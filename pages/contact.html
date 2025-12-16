@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | 이한결</title>
+  <style>
+    body{margin:0;font-family:system-ui, -apple-system, Segoe UI, Roboto, sans-serif;background:#f5f7fb;color:#111;}
+    header{background:#fff;border-bottom:1px solid #eaeaea;padding:18px 16px;text-align:center;}
+    header h1{margin:0;font-size:22px;}
+    header p{margin:6px 0 0;color:#555;font-size:13px;}
+    nav{background:#fff;border-bottom:1px solid #eaeaea;}
+    nav ul{margin:0;padding:0;list-style:none;display:flex;justify-content:center;gap:16px;}
+    nav a{display:block;padding:12px 10px;color:#111;text-decoration:none;font-weight:600;}
+    nav a:hover{text-decoration:underline;}
+    .wrap{max-width:900px;margin:20px auto;padding:0 14px;}
+    .card{background:#fff;border:1px solid #eaeaea;border-radius:14px;padding:16px;box-shadow:0 6px 20px rgba(0,0,0,.04);margin-bottom:16px;}
+    label{display:block;margin:10px 0 6px;font-weight:700;font-size:13px;}
+    input, textarea{width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:10px;font-size:14px;box-sizing:border-box;}
+    textarea{min-height:120px;resize:vertical;}
+    button{margin-top:12px;background:#111;color:#fff;border:none;border-radius:10px;padding:10px 14px;font-weight:700;cursor:pointer;}
+    button:hover{opacity:.9;}
+    .mini{color:#666;font-size:13px;line-height:1.6;margin-top:8px;}
+    audio{width:100%;margin-top:12px;}
+    footer{text-align:center;color:#777;font-size:12px;padding:18px 0;margin-top:20px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>웹프로그래밍 기말 프로젝트</h1>
+    <p>Contact 페이지</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./profile.html">Profile</a></li>
+      <li><a href="./hobby.html">Hobby</a></li>
+      <li><a href="./works.html">Works</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="wrap">
+    <section class="card">
+      <h3 style="margin:0 0 6px;">연락하기</h3>
+      <p class="mini">메일: hulangson06@gmail.com</p>
+
+      <form>
+        <label for="name">이름</label>
+        <input id="name" type="text" placeholder="이름을 입력하세요" required>
+
+        <label for="email">이메일</label>
+        <input id="email" type="email" placeholder="example@email.com" required>
+
+        <label for="msg">메시지</label>
+        <textarea id="msg" placeholder="전하고 싶은 내용을 적어주세요" required></textarea>
+
+        <button type="submit">보내기</button>
+      </form>
+
+      <audio controls>
+        <source src="../assets/audio/contact.mp3" type="audio/mpeg">
+        브라우저가 오디오를 지원하지 않습니다.
+      </audio>
+    </section>
+  </main>
+
+  <footer>© 2025 Web Programming Final Project</footer>
+</body>
+</html>
